@@ -6,7 +6,7 @@ Make sure you have [Git](https://git-scm.com/downloads/), [Node.js](https://node
 
 ## Clone
 ``` bash
-git clone https://github.com/danfuniok/xo.git
+git clone https://github.com/dafuniok/xo.git
 ```
 
 ## Install, build and run
