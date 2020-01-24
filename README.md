@@ -1,20 +1,15 @@
 # XO
+A 1v1 round-based browser-game. Using <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a> for app structure and [Socket.io](https://socket.io/) for real-time. This app uses SVG-Elements wrapped as [Vue-Components](https://vuejs.org/v2/guide/components.html/) and is laid out with [Vuetify](https://vuetifyjs.com/).
 
-> A 1v1 round-based browser-game.
-Using <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a> for app structure and [Socket.io](https://socket.io/) for real-time.
-This app uses SVG-Elements wrapped as [Vue-Components](https://vuejs.org/v2/guide/components.html/) and is laid out with [Vuetify](https://vuetifyjs.com/).
-
-### Getting Started
-
+## Getting Started
 Make sure you have [Git](https://git-scm.com/downloads/), [Node.js](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/get-npm/) or [Yarn](https://yarnpkg.com/lang/en/) installed on your system.
 
-#### Clone 
+## Clone
 ``` bash
-git clone https://github.com/danielfuniok/xo.git
+git clone https://github.com/danfuniok/xo.git
 ```
 
-#### Install, build and run
-
+## Install, build and run
 ``` bash
 # change directory
 $ cd xo
@@ -29,3 +24,7 @@ $ npm run dev
 ```
 
 For more configuration check out [Nuxt.js docs](https://nuxtjs.org/).
+
+## License
+
+The source code is licensed under MIT license
