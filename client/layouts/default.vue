@@ -69,7 +69,8 @@ export default {
       usersCount: 0
     }
   },
-  mounted() {
+  created() {
+    // TODO: On initial socket connect this event sometimes doesn't get triggered 
     socket.on("user-count", data => {
       this.usersCount = data.usersCount
     })

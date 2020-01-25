@@ -17,9 +17,9 @@ exports.create = function(io) {
     }
     const usersCount = Object.keys(users).length
     socket.broadcast.emit("user-count", {
-      usersCount: Object.keys(users).length
+      usersCount: usersCount
     })
-    socket.emit("user-count", { usersCount: Object.keys(users).length })
+    socket.emit("user-count", { usersCount: usersCount })
     console.log(`User`, [socket.id], `connected (Users online: ${usersCount})`)
 
     // ready check
