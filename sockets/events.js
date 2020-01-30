@@ -15,11 +15,11 @@ exports.create = function(io) {
       grid: "",
       name: ""
     }
-    const usersCount = Object.keys(users).length
+    let usersCount = Object.keys(users).length
+    socket.emit("user-count", { usersCount: usersCount })
     socket.broadcast.emit("user-count", {
       usersCount: usersCount
     })
-    socket.emit("user-count", { usersCount: usersCount })
     console.log(`User`, [socket.id], `connected (Users online: ${usersCount})`)
 
     // ready check
@@ -89,13 +89,16 @@ exports.create = function(io) {
 
     // user disconnect
     socket.on("disconnect", () => {
+      // update user-count
+      usersCount = Object.keys(users).length
+      socket.emit("user-count", { usersCount: usersCount })
       socket.broadcast.emit("user-count", {
-        usersCount: Object.keys(users).length
+        usersCount: usersCount
       })
       console.log(
         `User`,
         [socket.id],
-        `disconnect (Users online: ${Object.keys(users).length})`
+        `disconnect (Users online: ${usersCount})`
       )
     })
 

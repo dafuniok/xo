@@ -66,7 +66,7 @@ export default {
       title: "XO",
       clipped: false,
       fixed: false,
-      usersCount: 0
+      usersCount: ""
     }
   },
   created() {
