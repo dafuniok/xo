@@ -17,7 +17,7 @@ $ cd xo
 # install dependencies
 $ npm install
 
-# serve with hot reload at localhost:3000
+# serve with hot reload at localhost:9000
 $ npm run dev
 
 # for more script options see package.json file
