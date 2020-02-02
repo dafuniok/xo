@@ -5,6 +5,7 @@
 exports.create = function(io) {
   const users = {}
   const messages = []
+  let usersCount = 0
 
   io.on("connection", socket => {
     // create user
@@ -15,20 +16,16 @@ exports.create = function(io) {
       grid: "",
       name: ""
     }
-    let usersCount = Object.keys(users).length
-    socket.emit("user-count", { usersCount: usersCount })
-    socket.broadcast.emit("user-count", {
-      usersCount: usersCount
-    })
-    console.log(`User`, [socket.id], `connected (Users online: ${usersCount})`)
+    console.log(`User`, [socket.id], `connected (Users online: ${Object.keys(users).length})`)
 
     // ready check
     socket.on("ready-check", grid => {
       users[socket.id].ready = true
       users[socket.id].grid = grid
+      
       // opponent search
       for (const user in users) {
-        // not oneself, ready and same grid
+        // opponent, ready and grid verify
         if (
           socket.id !== user &&
           users[user].ready &&
@@ -80,7 +77,6 @@ exports.create = function(io) {
             // remove users from room
             clients.forEach(user => {
               io.sockets.sockets[user].leave(room)
-              // console.log('User', [user], `left Room [ \x1b[36m\'${room}\'\x1b[0m ]`)
             })
             console.log("Room", `[ \x1b[36m'${room}'\x1b[0m ] Game End`)
           }
@@ -145,11 +141,19 @@ exports.create = function(io) {
 
     // sync active edge
     socket.on("edge-activate", data => {
-      // console.log('User', [socket.id], `activated Edge ${data.edgeId}`)
       io.to(data.opponentId).emit("opponent-edge-activate", data.edgeId)
     })
 
-    // chat
+    // sync user-count
+    socket.on("user-count", () => {
+      usersCount = Object.keys(users).length
+      socket.emit("user-count", { usersCount: usersCount })
+      socket.broadcast.emit("user-count", {
+        usersCount: usersCount
+      })
+    })
+
+    // TODO: chat
     socket.on("last-messages", fn => {
       console.log("User %s - last-messages", socket.id)
       fn(messages.slice(-50))

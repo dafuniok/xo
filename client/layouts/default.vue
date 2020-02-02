@@ -70,7 +70,7 @@ export default {
     }
   },
   created() {
-    // TODO: On initial socket connect this event sometimes doesn't get triggered
+    socket.emit("user-count")
     socket.on("user-count", data => {
       this.usersCount = data.usersCount
     })
