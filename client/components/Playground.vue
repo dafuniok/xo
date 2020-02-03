@@ -33,10 +33,10 @@
     <v-card v-if="gameEnd" class="game-over" outlined>
       <v-list-item three-line>
         <v-list-item-content class="text-center">
-          <v-list-item-title v-if="victory.me" class="mb-1">
+          <v-list-item-title v-if="victory.me" class="mb-1 win">
             You win
           </v-list-item-title>
-          <v-list-item-title v-if="victory.opponent" class="mb-1">
+          <v-list-item-title v-if="victory.opponent" class="mb-1 defeat">
             You lost
           </v-list-item-title>
           <v-list-item-title v-if="victory.draw" class="mb-1">
@@ -225,7 +225,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 button {
   margin: 16px 0;
 }
@@ -256,6 +256,14 @@ button {
 
   .v-list-item__title {
     font-size: 1.25rem;
+  }
+
+  .win {
+    color: green;
+  }
+
+  .defeat {
+    color: #fa8a80;
   }
 }
 
