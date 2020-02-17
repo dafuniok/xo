@@ -28,10 +28,10 @@ For more configuration check out [Nuxt.js docs](https://nuxtjs.org/).
 ## Docker
 ``` bash
 # building image
-docker build -t <your username>/xo .
+$ docker build -t <your username>/xo .
 
 # run image
-docker run -p 9000:9000 -d <your username>/xo
+$ docker run -p 9000:9000 -d <your username>/xo
 ```
 
 ## License
