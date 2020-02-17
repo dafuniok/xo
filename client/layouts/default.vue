@@ -47,7 +47,7 @@
 
     <!-- footer -->
     <v-footer :fixed="fixed" app>
-      <span>2019</span>
+      <span>{{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
 </template>
@@ -63,7 +63,7 @@ export default {
   },
   data() {
     return {
-      title: "XO",
+      title: "XO Demo",
       clipped: false,
       fixed: false,
       usersCount: ""
