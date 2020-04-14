@@ -12,7 +12,7 @@
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "dev": "nodemon -w sockets -w server.js -w nuxt.config.js server.js",
     "build": "nuxt build",
-    "start": "SET NODE_ENV=production node server.js",
+    "start": "cross-env NODE_ENV=production node server.js",
     "generate": "nuxt generate",
     "test": "jest"
   },
@@ -27,6 +27,7 @@
     "@vue/test-utils": "^1.0.0-beta.30",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.1.0",
+    "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-loader": "^3.0.3",

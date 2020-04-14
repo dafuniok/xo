@@ -1,4 +1,7 @@
 module.exports = {
+  server: {
+    socket: "~/server.js"
+  },
   srcDir: "client/",
   mode: "spa",
   /*
