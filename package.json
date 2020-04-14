@@ -17,13 +17,13 @@
     "test": "jest"
   },
   "dependencies": {
+    "@nuxtjs/vuetify": "^1.9.1",
     "express": "^4.14.0",
     "nuxt": "^2.11.0",
     "socket.io": "^2.3.0",
     "socket.io-client": "^2.3.0"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.9.1",
     "@vue/test-utils": "^1.0.0-beta.30",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.1.0",
