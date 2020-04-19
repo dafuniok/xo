@@ -129,12 +129,9 @@ footer {
     }
   }
 
-
   &:hover {
     background-color: #f4f4f4;
   }
-  /*text-align: center;
-  text-align-last: center;*/
 }
 
 .user-count {
