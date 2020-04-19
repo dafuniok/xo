@@ -5,7 +5,7 @@
     <v-card v-if="!ready && !gameStarted && !gameEnd" class="text-center">
       <v-card-text class="pb-0">
         <p class="title">
-          {{ $t('game.ready') }}
+          {{ $t("game.ready") }}
         </p>
       </v-card-text>
       <GridSelect />

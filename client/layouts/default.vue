@@ -18,7 +18,7 @@
             </v-badge>
           </v-btn>
         </template>
-        <span>{{ $t('appbar.users-online') }}</span>
+        <span>{{ $t("appbar.users-online") }}</span>
       </v-tooltip>
       <Information />
       <div class="lang d-flex justify-center" v-ripple>
@@ -79,7 +79,7 @@ export default {
       clipped: false,
       fixed: false,
       usersCount: "",
-      langs: ['en', 'de'],
+      langs: ["en", "de"]
     }
   },
   created() {

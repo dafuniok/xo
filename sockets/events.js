@@ -16,13 +16,17 @@ exports.create = function(io) {
       grid: "",
       name: ""
     }
-    console.log(`User`, [socket.id], `connected (Users online: ${Object.keys(users).length})`)
+    console.log(
+      `User`,
+      [socket.id],
+      `connected (Users online: ${Object.keys(users).length})`
+    )
 
     // ready check
     socket.on("ready-check", grid => {
       users[socket.id].ready = true
       users[socket.id].grid = grid
-      
+
       // opponent search
       for (const user in users) {
         // opponent, ready and grid verify

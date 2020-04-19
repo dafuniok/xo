@@ -2,7 +2,7 @@
   <!-- GridSelect -->
   <v-list class="py-0 px-4">
     <v-list-item-title class="mb-4">
-      {{ $t('game.grid-choose') }}
+      {{ $t("game.grid-choose") }}
     </v-list-item-title>
     <v-list-item-group
       v-model="selectedGrid"
