@@ -39,7 +39,8 @@ module.exports = {
    */
   modules: ["~/io"],
   env: {
-    WS_URL: process.env.WS_URL || "0.0.0.0"
+    WS_URL: process.env.WS_URL || "0.0.0.0",
+    VERSION: process.env.npm_package_version
   },
   /*
    ** vuetify module configuration

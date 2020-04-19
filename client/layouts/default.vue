@@ -59,7 +59,7 @@
 
     <!-- footer -->
     <v-footer :fixed="fixed" app>
-      <span>{{ new Date().getFullYear() }}</span>
+      <span>{{ `XO - Version ${version}` }}</span>
     </v-footer>
   </v-app>
 </template>
@@ -75,11 +75,16 @@ export default {
   },
   data() {
     return {
-      title: "XO Demo",
+      title: "XO",
       clipped: false,
       fixed: false,
       usersCount: "",
       langs: ["en", "de"]
+    }
+  },
+  computed: {
+    version() {
+      return process.env.VERSION
     }
   },
   created() {
