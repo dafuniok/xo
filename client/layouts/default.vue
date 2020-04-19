@@ -18,7 +18,7 @@
             </v-badge>
           </v-btn>
         </template>
-        <span>Users online</span>
+        <span>{{ $t('appbar.users-online') }}</span>
       </v-tooltip>
       <Information />
       <div class="lang d-flex justify-center" v-ripple>

@@ -1,6 +1,10 @@
 {
+  "appbar": {
+    "users-online": "Users online"
+  },
   "game": {
-    "ready": "Hi, ready to play?"
+    "ready": "Hi, ready to play?",
+    "grid-choose": "Choose your Grid-System"
   }
 }
   
