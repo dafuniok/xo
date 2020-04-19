@@ -10,7 +10,7 @@
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
           <v-btn icon class="pt-1">
-            <v-icon class="user-count-icon" v-on="on">
+            <v-icon v-on="on">
               mdi-account-group
             </v-icon>
             <v-badge class="user-count">
@@ -21,6 +21,18 @@
         <span>Users online</span>
       </v-tooltip>
       <Information />
+      <div class="lang d-flex justify-center" v-ripple>
+        <select v-model="$root.$i18n.locale">
+          <option
+            v-for="(lang, i) in langs"
+            :key="`Lang${i}`"
+            :value="lang"
+            :selected="lang === 'de'"
+          >
+            {{ lang }}
+          </option>
+        </select>
+      </div>
     </v-app-bar>
 
     <!-- content -->
@@ -66,7 +78,8 @@ export default {
       title: "XO Demo",
       clipped: false,
       fixed: false,
-      usersCount: ""
+      usersCount: "",
+      langs: ['en', 'de'],
     }
   },
   created() {
@@ -83,7 +96,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 main {
   margin-top: 64px;
 }
@@ -100,7 +113,28 @@ footer {
   text-align: center;
 }
 
-.user-count-icon {
+.lang {
+  height: 48px;
+  width: 48px;
+  font-size: 16px;
+  border-radius: 50%;
+
+  select {
+    text-transform: uppercase;
+    &:focus {
+      outline: 0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+
+  &:hover {
+    background-color: #f4f4f4;
+  }
+  /*text-align: center;
+  text-align-last: center;*/
 }
 
 .user-count {
