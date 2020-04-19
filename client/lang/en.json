@@ -4,7 +4,9 @@
   },
   "game": {
     "ready": "Hi, ready to play?",
-    "grid-choose": "Choose your Grid-System"
+    "grid-choose": "Choose your Grid-System",
+    "win": "You win!",
+    "lost": "You lost."
   }
 }
   

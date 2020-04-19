@@ -4,7 +4,9 @@
   },
   "game": {
     "ready": "Hi, bist du bereit?",
-    "grid-choose": "Wähle dein Raster"
+    "grid-choose": "Wähle dein Raster",
+    "win": "Du hast gewonnen!",
+    "lost": "Du hast verloren."
   }
 }
   

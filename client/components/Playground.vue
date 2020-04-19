@@ -34,10 +34,10 @@
       <v-list-item three-line>
         <v-list-item-content class="text-center">
           <v-list-item-title v-if="victory.me" class="mb-1 win">
-            You win
+            {{ $t("game.win") }}
           </v-list-item-title>
           <v-list-item-title v-if="victory.opponent" class="mb-1 defeat">
-            You lost
+            {{ $t("game.lost") }}
           </v-list-item-title>
           <v-list-item-title v-if="victory.draw" class="mb-1">
             Draw
