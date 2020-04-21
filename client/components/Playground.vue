@@ -232,8 +232,6 @@ button {
 .search-grid {
   width: 64px;
   height: 48px;
-  color: #1976d2;
-  background-color: #e4effa;
   line-height: 1.1;
   font-size: 1.25rem;
 }
