@@ -3,7 +3,7 @@
   <div class="score-board d-flex">
     <div :class="{ 'focus-green': myTurn }" class="player-container left ml-2">
       <p class="name body-2 mb-0">
-        You
+        {{ $t("game.you") }}
       </p>
       <p class="score">
         {{ players.me.score }}
@@ -20,7 +20,7 @@
         {{ players.opponent.score }}
       </p>
       <p class="name body-2 mb-0">
-        Opponent
+        {{ $t("game.opponent") }}
       </p>
     </div>
   </div>

@@ -59,7 +59,7 @@
 
     <!-- footer -->
     <v-footer :fixed="fixed" app>
-      <span>{{ `XO - Version ${version}` }}</span>
+      <span>{{ `XO ${new Date().getFullYear()} - Version ${version}` }}</span>
     </v-footer>
   </v-app>
 </template>

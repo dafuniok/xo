@@ -1,12 +1,38 @@
 {
+  "general": {
+    "yes": "ja",
+    "no": "nein",
+    "cancel": "Abbrechen"
+  },
   "appbar": {
     "users-online": "Benutzer online"
   },
   "game": {
+    "you": "Du",
+    "opponent": "Gegner",
     "ready": "Hi, bist du bereit?",
     "grid-choose": "Wähle dein Raster",
     "win": "Du hast gewonnen!",
-    "lost": "Du hast verloren."
+    "lost": "Du hast verloren.",
+    "draw": "Unentschieden",
+    "new": "Neues Spiel",
+    "end": "Beenden",
+    "opponent-left": "Der Gegner hat das Spiel verlassen",
+    "search-opponent": "Suche nach Gegner"
+  },
+  "info": {
+    "about": "ist ein 1v1 rundenbasiertes Browser-Spiel für Desktop- und Mobilgeräte. Ziel des Spiels ist das Sammeln von Vierecken durch Klicken oder Berühren der Ränder. Inspiriert von ",
+    "tech": {
+      "consist": "stack besteht aus",
+      "structure": "für die App-Struktur und",
+      "real-time": "für die Echtzeit-Kommunikation",
+      "frontend": "Das Frontend wurde gebaut mit",
+      "md-framework": "ein Material Design Component Framework",
+      "rendered": "Das Spiel wird gerendert mit",
+      "elements": "Elementen",
+      "wrapped": "gebettet in",
+      "components": "Komponenten"
+    }
   }
 }
   

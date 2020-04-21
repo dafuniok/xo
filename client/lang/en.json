@@ -1,12 +1,38 @@
 {
+  "general": {
+    "yes": "yes",
+    "no": "no",
+    "cancel": "Cancel"
+  },
   "appbar": {
     "users-online": "Users online"
   },
   "game": {
+    "you": "You",
+    "opponent": "Opponent",
     "ready": "Hi, ready to play?",
     "grid-choose": "Choose your Grid-System",
     "win": "You win!",
-    "lost": "You lost."
+    "lost": "You lost.",
+    "draw": "Draw",
+    "new": "New Game",
+    "end": "End Game",
+    "opponent-left": "Opponent left the game",
+    "search-opponent": "Searching for opponent"
+  },
+  "info": {
+    "about": "is a 1v1 round-based browser-game supporting desktop and mobile devices. The goal is to collect squares by clicking or touching their borders. Inspired by ",
+    "tech": {
+      "consist": "stack consist of",
+      "structure": "for app structure and",
+      "real-time": "for real-time communication",
+      "frontend": "The Frontend is build with",
+      "md-framework": "a Material Design Component Framework",
+      "rendered": "The game is rendered with",
+      "elements": "Elements",
+      "wrapped": "wrapped in",
+      "components": "Components"
+    }
   }
 }
   

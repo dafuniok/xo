@@ -14,16 +14,12 @@
           <v-col>
             <v-card class="card pa-2" outlined tile>
               <p class="text-left">
-                <span class="display-2">XO</span> is a 1v1 round-based
-                browser-game supporting desktop and mobile devices. It is
-                inspired by the game
+                <span class="display-2">XO </span>
+                {{ $t("info.about") }}
                 <a
-                  href="https://de.wikipedia.org/wiki/Tic-Tac-Toe/"
+                  href="https://www.google.com/search?q=Tic-Tac-Toe"
                   target="_blank"
-                >Tic-Tac-Toe</a>
-                . Instead of drawing X's and O's you have to draw border edges
-                of those by touching them. The goal is to close as much borders
-                as possible.
+                >Tic-Tac-Toe</a>.
               </p>
             </v-card>
           </v-col>
@@ -49,22 +45,22 @@
           <v-col>
             <v-card class="card pa-2" outlined tile>
               <p class="text-left">
-                <span class="display-2">Tech</span> stack consist of
+                <span class="display-2">Tech </span>{{ $t('info.tech.consist') }}
                 <a
                   href="https://nuxtjs.org/"
-                  target="_blank">Nuxt.js</a> for app structure and
+                  target="_blank">Nuxt.js</a> {{ $t('info.tech.structure') }}
                 <a
                   href="https://socket.io/"
-                  target="_blank">Socket.io</a> for real-time communication. The Frontend is build and composed with
-                <a
-                  href="https://developer.mozilla.org/de/docs/Web/SVG/Element/svg/"
-                  target="_blank">SVG-Elements</a>wrapped in
-                <a
-                  href="https://vuejs.org/v2/guide/components"
-                  target="_blank">Vue-Components</a>. In addition to that the app uses
+                  target="_blank">Socket.io</a> {{ $t('info.tech.real-time') }}. {{ $t('info.tech.frontend') }}
                 <a
                   href="https://vuetifyjs.com/"
-                  target="_blank">Vuetify</a> as a Material Design Component Framework.
+                  target="_blank">Vuetify</a>, {{ $t('info.tech.md-framework') }}. {{ $t('info.tech.rendered') }}
+                <a
+                  href="https://developer.mozilla.org/de/docs/Web/SVG/Element/svg/"
+                  target="_blank">SVG-{{ $t('info.tech.elements') }}</a> {{ $t('info.tech.wrapped') }}
+                <a
+                  href="https://vuejs.org/v2/guide/components"
+                  target="_blank">Vue-{{ $t('info.tech.components') }}</a>.
               </p>
             </v-card>
           </v-col>

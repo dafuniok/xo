@@ -40,17 +40,17 @@
             {{ $t("game.lost") }}
           </v-list-item-title>
           <v-list-item-title v-if="victory.draw" class="mb-1">
-            Draw
+            {{ $t("game.draw") }}
           </v-list-item-title>
-          <v-list-item-subtitle>Play again?</v-list-item-subtitle>
+          <v-list-item-subtitle>{{ $t("game.new") }}?</v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
       <v-card-actions class="pb-0">
         <v-btn color="primary" class="width-half" text @click="restartGame()">
-          Yes
+          {{ $t("general.yes") }}
         </v-btn>
         <v-btn color="primary" class="width-half ml-0" text @click="endGame()">
-          No
+          {{ $t("general.no") }}
         </v-btn>
       </v-card-actions>
     </v-card>
@@ -59,7 +59,7 @@
     <v-card v-if="opponentSearch" align="center">
       <v-card-text>
         <p class="title mb-0">
-          Searching for opponent
+          {{ $t("game.search-opponent") }}
         </p>
       </v-card-text>
       <v-progress-circular :size="50" color="primary" indeterminate />
@@ -68,7 +68,7 @@
       </v-list-item-content>
       <v-card-actions class="cancel-search py-0">
         <v-btn color="primary" text @click="endGame()">
-          Cancel
+          {{ $t("general.cancel") }}
         </v-btn>
       </v-card-actions>
     </v-card>
@@ -76,16 +76,15 @@
     <!-- Opponent Left -->
     <v-card v-if="opponentLeft" class="opponent-left">
       <v-card-text>
-        <p class="title">
-          Opponent left the game.
-        </p>
+        <!-- eslint-disable -->
+        <p class="title">{{ $t("game.opponent-left") }}!</p>
       </v-card-text>
       <v-card-actions class="pb-0">
         <v-btn color="primary" class="width-half" text @click="restartGame()">
-          Restart Search
+          {{ $t("game.new") }}
         </v-btn>
         <v-btn color="primary" class="width-half ml-0" text @click="endGame()">
-          End Game
+          {{ $t("game.end") }}
         </v-btn>
       </v-card-actions>
     </v-card>
