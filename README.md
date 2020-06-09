@@ -1,6 +1,8 @@
 # XO
 A 1v1 round-based browser-game. Using <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a> for app structure and [Socket.io](https://socket.io/) for real-time. This app uses SVG-Elements wrapped as [Vue-Components](https://vuejs.org/v2/guide/components.html/) and is laid out with [Vuetify](https://vuetifyjs.com/).
 
+Checkout the live [Demo](http://xo-app.de/).
+
 ## Getting Started
 Make sure you have [Git](https://git-scm.com/downloads/), [Node.js](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/get-npm/) or [Yarn](https://yarnpkg.com/lang/en/) installed on your system.
 
